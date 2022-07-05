@@ -5,3 +5,16 @@
   font-weight: 700;
   display: block;
 }
+
+body {
+  position: absolute;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
+  position: relative;
+}
