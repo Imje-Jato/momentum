@@ -1,0 +1,7 @@
+.hidden {
+  display: none;
+}
+#qoute span:last-child {
+  font-weight: 700;
+  display: block;
+}
