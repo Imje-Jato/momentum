@@ -4,8 +4,6 @@ const toDoList = document.getElementById("todo-list");
 const refresh = document.querySelector("#greeting");
 
 const TODO_KEY = "toDos";
-const FADEOUT_KEY = "fadeOut";
-const FADEIN_KEY = "fadeIn";
 
 let toDos = [];
 

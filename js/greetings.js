@@ -4,6 +4,8 @@ const greeting = document.querySelector("#greeting");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
+const FADEOUT_KEY = "fadeOut";
+const FADEIN_KEY = "fadeIn";
 
 function onLoginSubmit(event) {
   event.preventDefault();
@@ -16,6 +18,7 @@ function onLoginSubmit(event) {
 function paintGreetings(input) {
   greeting.innerText = `Hello ${input}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
+  greeting.classList.add(FADEOUT_KEY);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
@@ -24,6 +27,7 @@ console.log(savedUsername);
 
 if (savedUsername === null) {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
+
   loginForm.addEventListener("submit", onLoginSubmit);
 } else {
   paintGreetings(savedUsername);
